@@ -24,8 +24,8 @@ setsudo(R,SUDO)
 R.set("{}Nbot:BOTrank".format(BOT_ID), BOT_ID)
 
 if R.get("{}:Nbot:restart".format(BOT_ID)):
-  Bot("sendMessage",{"chat_id":R.get("{}:Nbot:restart".format(BOT_ID)),"text":"تم اعادة تشغيل البوت - Done restart the bot","parse_mode":"html"})
-  R.delete("{}:Nbot:restart".format(BOT_ID))
+Bot("sendMessage",{"chat_id":R.get("{}:Nbot:restart".format(BOT_ID)),"text":"تم اعادة تشغيل البوت - Done restart the bot","parse_mode":"html"})
+R.delete("{}:Nbot:restart".format(BOT_ID))
   
   
 t = threading.Thread(target=Del24,args=("clonsft", "message",R))
